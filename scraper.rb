@@ -1,5 +1,5 @@
 require 'nokogiri'
-require "open-uri"
+require 'open-uri'
 require 'csv'
 
 def scraper
@@ -36,7 +36,7 @@ def scraper
                 end
                 
                 #puts "#{autor},#{fecha},#{hora},#{likes},#{dislikes},#{comentarios},#{texto}"
-                csv << [autor,fecha,hora,likes,comentarios,texto]
+                csv << [autor,fecha,hora,likes,dislikes,comentarios,texto]
             end
         end
         puts "CSV file generated successfully"
